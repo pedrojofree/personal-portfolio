@@ -182,7 +182,6 @@
   background-color: #fff;
 }
 .right-side-area .about-area {
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -272,7 +271,6 @@
   padding-top: 40px;
 }
 .right-side-area .portfolio-area h3 {
-  padding: 5px;
   color: #fff;
   display: inline-block;
   background-color: #242732;
@@ -299,7 +297,7 @@
   overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 .right-side-area .portfolio-area .card .front {
   transform: perspective(600px) rotateY(0deg);
@@ -397,6 +395,10 @@
   .left-side-area {
     display: none;
   }
+  .footer {
+    display: block;
+    background-color: rgb(102, 205, 239);
+  }
   .right-side-area {
     width: 100%;
   }
@@ -408,6 +410,11 @@
   }
   .right-side-area .services-area {
     background-image: none;
+  }
+}
+@media (min-width: 991px) {
+  .footer {
+    display: none;
   }
 }
 @media (max-width: 575px) {

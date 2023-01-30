@@ -191,7 +191,6 @@
         }
     } 
     .about-area{
-        min-height: 100vh;
         position: relative;
         overflow: hidden;
         
@@ -282,7 +281,6 @@
     .portfolio-area{
         padding-top: 40px;
         h3{
-            padding: 5px;
             color: #fff;
             display: inline-block;
             background-color: #242732;
@@ -308,7 +306,7 @@
                 height: 100%;
                 overflow: hidden;
                 backface-visibility: hidden;
-                transition: .3s;
+                transition: .1s;
             }
             .front{
                 transform: perspective(600px) rotateY(0deg);
@@ -410,6 +408,10 @@
     .left-side-area {
       display: none;
     }
+    .footer{
+        display: block;
+        background-color: rgb(102, 205, 239);
+    }
     .right-side-area {
         .home{
             background-position: center;
@@ -423,6 +425,13 @@
         }
     }
   }
+
+  @media (min-width: 991px) {
+    .footer {
+        display: none;
+    }
+  }
+
   @media (max-width: 575px) {
     .tecnologias {
         display:flex;
